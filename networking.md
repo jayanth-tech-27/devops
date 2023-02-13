@@ -614,6 +614,12 @@ app
 * give inbound and out bound rules
 * do subnets association to NACL
 
+# aws-networking-workshops
+---------------------------
+* for [referhere](https://directdevops.blog/2023/02/12/aws-classroomnotes-12-feb-2023/) for 12/feb/2023 part-1 classnotes
+* for [referhere](https://directdevops.blog/2023/02/12/aws-classroomnotes-12-feb-2023-2/) for 12/feb/2023  part-2 classnotes
+
+
 
 
 
