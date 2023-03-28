@@ -707,6 +707,30 @@ resource "aws_instance" "example" {
 * The `content` block defines the configuration of each network interface, using the `subnet_id` attribute to set the value of the subnet ID for each interface.
 
 
+## screts
+* awscl-->.aws-->credentioals-->in that we can mention
+* export acsesskey ans secreat key as a everonmental variables.
+* terraform vult.
+## terrform version manager 
+* we should install terraform version manager 
+* tfrnv list-remote --->we can see all list of tf versions
+* `<tfenv install'thatparticularversion>`
+* we can switch `tfevn use <version> `
+
+import resources
+----------------
+** `terraform import <resource type> <resource-name> id `
+* we have to create an empty block git creadintioal to on that
+* next do inti and plan and aply
+
+* we get those resources into .state file
+* we can re construct the terraform body(code)
+
+userdata
+---------
+* user_data = `"${file("coammands.sh")}"`
+
+
 
 
 

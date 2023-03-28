@@ -1,0 +1,21 @@
+pipeline {
+    agent { label 'chandu'}
+    triggers {
+        pollSCM('* * * * *')
+    }
+    stages {
+        stage ( 'VCS' ) {
+            steps {
+              git url: "https://github.com/chandushine/StudentCoursesRestAPI-new.git"
+              branch: "master"
+            }
+        }
+        stage ( 'image build $ push' ) {
+            steps{
+                sh """docker image build -t 9848016515/studentcource:11.11
+                      docker push 9848016515/studentcource:11.11
+                      docker scan 9848016515/studentcource:11.11"""
+            }
+        }
+    }
+}
