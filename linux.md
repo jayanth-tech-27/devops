@@ -21,7 +21,12 @@
 ### 8. how will you create space on disk if is is showing 100% used?
 * df -h ---> show the disk usege
 * df -th ---> its shows filesystems also
-* du -sh *  ---> is shos the ulitigation we can find out what are the unusefull stuff and then deleted. if in case all memory was usefull then add a disk space to the disk
+* du -sh *  ---> is shows the utilization we can find out what are the unusefull stuff and then deleted. if in case all memory was usefull then add a disk space to the disk
 
+9. **softlink**: ls -s <source> <destination> 
+    - in softlink if we delete source it will delete destination also (defrent inodes)
+10. **hardlink**: ls <source> <destination>
+    - in hardlink if we delete the source it will not delete the destination becouse both will maintain the same "inode".
+11. 
 
 
