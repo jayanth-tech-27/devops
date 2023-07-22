@@ -660,7 +660,7 @@ output "secondaryvpcid" {
 }
 #provider.tf
 ------------
-erraform {
+terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"

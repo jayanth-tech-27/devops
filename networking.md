@@ -620,6 +620,15 @@ app
 * for [referhere](https://directdevops.blog/2023/02/12/aws-classroomnotes-12-feb-2023-2/) for 12/feb/2023  part-2 classnotes
 
 
+CDN:Content Delivery Network
+----------------------------
+* A content delivery network (CDN) is a geographically distributed group of servers that caches content close to end users. A CDN allows for the quick transfer of assets needed for loading Internet content, including HTML pages, JavaScript files, stylesheets, images, and videos.
+
+Edge Locations
+---------------
+* They help in establishing direct connectivity with AWS Global network (AWS Direct Connect)
+
+* Wavelength zones are 5G carrier network supported
 
 
 

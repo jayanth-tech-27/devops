@@ -2,7 +2,7 @@ pod level issues
 ----------------
 * node dosn't have suffisient memory
 * 
-1. image pullbackof
+1. Image pullbackof
 --------------------
 
  * resons:
@@ -25,7 +25,7 @@ pod level issues
     * kube ctl events command --> its show the all the dat about pod,rs,svc,diployment pod ....ect)
 ```
 name spaces:
-* isolated aria
+* isolated area
 * we canot use resorces to one name space to onther one (every ns has have there alocated resorces)
 * logical sparation taken care by the name spases
 ```
@@ -52,6 +52,7 @@ name spaces:
   * pod is running out of memory then the alocated the memory by resourece kota administator.( he does alocated the resouece for evry namespaces)
 
 6.  to get prosessid --> **loging to the container or pod and execute `ps-ef'**
+
 
 
 

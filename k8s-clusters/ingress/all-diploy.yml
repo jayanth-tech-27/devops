@@ -1,0 +1,91 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx
+spc:
+  minReadySeconds: 3
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: nginx
+      name: nginx
+    spec:
+      containers:
+        - name: nginx
+          image: 9848016515/nginx1:11
+          ports:
+            - containerPort: 80
+              protocol: TCP
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-color
+spc:
+  minReadySeconds: 3
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-color
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: nginx-color
+      name: nginx-color
+    spec:
+      containers:
+        - name: nginx
+          image: 9848016515/color:333
+          ports:
+            - containerPort: 80
+              protocol: TCP
+  
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-m
+spc:
+  minReadySeconds: 3
+  replicas: 2
+  selector:
+    matchLabels:
+      app: nginx-m
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%
+      maxUnavailable: 25%
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: nginx-m
+      name: nginx-m
+    spec:
+      containers:
+        - name: nginx
+          image: 9848016515/color:444
+          ports:
+            - containerPort: 80
+              protocol: TCP
+
+
+          
+
+
