@@ -29,6 +29,20 @@
 10. ### hardlink:
 *  `ls <source> <destination>`
     - in hardlink if we delete the source it will not delete the destination becouse both will maintain the same "inode".
-11. 
+11. ### give single command permission
+    `which cp` this command give the path of that coammand and that command we shouild give in the sudors file like `chandu ALL(ALL):NOPASSWD ALL <PATH OF THT COMMAND>
 
-
+12. ### change the word in perticular file
+ * sed -i 's/old-text/new-text/g' input.txt
+ * s: This indicates the substitution command in sed.
+ *old-text: This is the text you want to find and replace.
+ * new-text: This is the new text you want to replace the old text with.
+ * g: This is a flag that stands for "global" and tells sed to replace all
+ 13. ### delete the file with particular permission.
+  * `find . -type f -perm 600 -exec rm {} \;`
+  * **find**: The command to search for files and directories.
+  * **.**: The starting directory for the search. In this case, it is the current directory.
+  * **-type f**: This option specifies that we are only interested in regular files (not directories or special files).
+  * **-perm 600**: This option filters files based on their permissions. The value 600 represents read and write permissions for the owner. Note that file permissions are represented in octal notation.
+  * **-exec**: This option allows us to execute a command on each file found.
+  * **rm {} \;**: This part of the command is the rm command being executed for each file found. The {} will be replaced with the file names found by find, and \; is used to terminate the -exec option.
