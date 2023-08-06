@@ -105,9 +105,11 @@ ansible role:
 ------------
 1. place the group of playbooks in one file. it will help reduce the code complexity, and increase the code reusability.
 2. There's a large playbook file with hundreds lines of code. It's frustrating to maintain, change, and support it. We must cut this huge file into smaller files and use a single master playbook to control these files using - include <playbook name> in the master playbook
-**Ansible-Galaxy:-**
+
+* **Ansible-Galaxy:-**
 * Galaxy is your hub for finding, reusing and sharing the best Ansible content.
-**Ansible-Inventory:**
+
+* **Ansible-Inventory:**
 * Inventory file (host file) contains the list of all the servers which you want to perform some tasks on them.
 * **Advantage of inventry:**It's good to separate servers for their specific purposes on different groups, and add all servers in a single group so that you can access all of them at once.
  `example:/etc/ansible/hosts`
