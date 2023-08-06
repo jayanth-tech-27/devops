@@ -119,9 +119,11 @@ Modules:
 Tasks:
 -------
 * Unit of action in Ansible
+
 Playbooks:
 -----------
 * we have to excute Ordered list of tasks
+
 Check for syntax of playbook
 -----------------------------
 * ansible-playbook -i <inventory-path> --syntax-check <playbook-path>
