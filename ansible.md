@@ -1,12 +1,17 @@
 ansible
 --------
+
 what is ansible?
 ----------------
+
 1. ansible is a configuration management tool.
 2. Ansible is a simple, powerful, cross-platform, and agentless IT automation tool that everyone can use for their needs.(to do tasks atomatically)
+
 what is configuration management tool?
 -------------------------------------
+
 * it is maintain number(100 and 1000's) of machines with automation
+
 Why Ansible:
 ------------
  * Provisioning
@@ -16,6 +21,7 @@ Why Ansible:
  * Security Compliance or Automation
  * Infrastructure Orchestration
  * IT automation
+
 Advantages of Ansible:
 -----------------------
  1. 
@@ -28,22 +34,26 @@ what it maintain ?
 	2. configuration
 	3. updates
 	4. maintain and so on..
+
 Features of Ansible:
 --------------------
   * It's agentless, so you don't need to install and manage an agent on the servers you need to run ansible on.
   * It uses SSH to establish secure connections.
   * It follows push bases architecture.
   * It is built on top of python, so it has a lot of functionalities of python built-in.
+
 Setup Password-less SSH Connection:
 -----------------------------------
   * Public-Private key encryption
   * Generate keys using ssh-keygen command
   * Transfer keys using ssh-copy-id command: ssh-copy-id USER@SERVER_IP
   * Validate
+
 why configuration management tool?
 ---------------------------------
 * reduce management complexity
 * save time
+
 configuration management tools(CM):\
 -----------------------------------
 1. There are two types of CM
@@ -52,9 +62,11 @@ configuration management tools(CM):\
 2. Direction of communication
   **PULL** => Node to CM server
   **Push** => CM Server to Node
+
 What is required in PULL Based CM:
 ----------------------------------
 * Agent needs to be installed with necessary credentials to connect to CM Server
+
 
 What is required in Push Based CM:
 ----------------------------------
@@ -64,10 +76,12 @@ What is required in Push Based CM:
 	puppet ----> 2005	pull
 	chef ------->2008	pull
 	ansible ----->2011	push
+
 how ansible work?
 -----------------
 * ansible is working on push based mechanisam. push based means here server(master) will push the code into the nodes(slaves).
 how the master communicate with slaves?
+
 ---------------------------------------
 	with ssh public key & private key they communicate.
 **we can work with ansible in 2 ways** -
@@ -86,6 +100,7 @@ ansible playbooks:
 * playbook works with modules(yum,service,file,etc..), and inventory file(/etc/ansible/hosts) over ssh communication.
 **Q)what we need to run playbook ?**
 * we need to specify target, tasks in playbook with modules(apt oryum, file, etc..)
+
 ansible role:
 ------------
 1. place the group of playbooks in one file. it will help reduce the code complexity, and increase the code reusability.
@@ -107,15 +122,19 @@ ansible role:
 Control Node:
 -------------
 * where we have Machine with Ansible installed
+
 Managed Node(Master Node):
 -------------
 * Machines that you manage with Ansible
+
 Inventory or Inventory file:
 ------------------------------
 * List of managed nodes, default file location is /etc/ansible/hosts
+
 Modules:
 ---------
 * Unit of code that Ansible executes or In ansible the smallest unit of work is perfomed by module
+
 Tasks:
 -------
 * Unit of action in Ansible
