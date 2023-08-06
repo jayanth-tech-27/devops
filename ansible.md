@@ -96,8 +96,10 @@ ansible playbooks:
 **Q)what is playbook?**
 1. the collection of play
 2. playbook is a set of instructions file. to do a particular tasks on target(host) or group of target(hosts).
+
 **Q)how playbook works?**
 * playbook works with modules(yum,service,file,etc..), and inventory file(/etc/ansible/hosts) over ssh communication.
+
 **Q)what we need to run playbook ?**
 * we need to specify target, tasks in playbook with modules(apt oryum, file, etc..)
 
