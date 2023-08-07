@@ -133,16 +133,16 @@ configure mailserver,port,smtp authentication in "system configure"
 User management:
 ---------------
 1. install necessary plugin
-  role based authorization strategy	
+  * role based authorization strategy	
 2. create users
 	Manage jenkins ---> Manage users --> create users
-	dev_user
-	test_user
-	manager
+	- dev_user
+	- test_user
+	- manager
 3. create roles
-	developer
-	tester
- for this you need to enable "role based strategy" in "configure global security"
+	- developer
+	- tester
+ * for this you need to enable "role based strategy" in "configure global security"
 
 
 
