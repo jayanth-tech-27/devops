@@ -4,6 +4,5 @@ metadata:
   name:trail11
 spec:
 containers:
-  -name: dyingalpine
-  image: alpine
-  
+  - name: dyingalpine
+    image: alpine
